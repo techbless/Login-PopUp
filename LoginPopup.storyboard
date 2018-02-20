@@ -104,7 +104,6 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZUc-xT-bck" firstAttribute="leading" secondItem="G7c-3U-Wx2" secondAttribute="leading" id="1jS-Wc-FQS"/>
                             <constraint firstItem="G7c-3U-Wx2" firstAttribute="trailing" secondItem="ZUc-xT-bck" secondAttribute="trailing" id="IMq-ba-kaX"/>
@@ -117,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="213" y="178"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="hnE-RX-Juf">
             <objects>
-                <viewController id="2hF-dU-ON9" sceneMemberID="viewController">
+                <viewController id="2hF-dU-ON9" customClass="SignUpViewController" customModule="LoginPopup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Io-Q4-IYu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,7 +240,6 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cy6-FT-8Pl" firstAttribute="bottom" secondItem="EDJ-U5-MnJ" secondAttribute="bottom" id="6wB-KK-kVf"/>
                             <constraint firstItem="cy6-FT-8Pl" firstAttribute="top" secondItem="1Io-Q4-IYu" secondAttribute="top" id="So5-sU-T9r"/>
@@ -255,10 +253,10 @@
             </objects>
             <point key="canvasLocation" x="1324" y="475"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="ieP-0r-8tU">
             <objects>
-                <viewController id="Vud-k2-Hmw" sceneMemberID="viewController">
+                <viewController id="Vud-k2-Hmw" customClass="SignInViewController" customModule="LoginPopup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uhc-i6-9Z0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -344,7 +342,6 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6QU-LF-ctz" firstAttribute="top" secondItem="Uhc-i6-9Z0" secondAttribute="top" id="NCS-P3-4GF"/>
                             <constraint firstItem="6QU-LF-ctz" firstAttribute="trailing" secondItem="XHF-gS-eDR" secondAttribute="trailing" id="dAc-OH-2ev"/>
