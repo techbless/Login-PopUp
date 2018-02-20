@@ -333,6 +333,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <state key="normal" title="SIGN IN"/>
                                                     <connections>
+                                                        <action selector="SignInTapped:" destination="Vud-k2-Hmw" eventType="touchUpInside" id="NnR-vG-8HH"/>
                                                         <segue destination="cpG-oc-ogc" kind="show" id="dDL-bk-Idq"/>
                                                     </connections>
                                                 </button>
@@ -363,6 +364,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XHF-gS-eDR"/>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="6CE-pK-Haa" id="MhP-rM-WP4"/>
+                        <outlet property="usernameOrEmail" destination="vdd-0p-KfM" id="CnA-Ka-gBI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oE-L9-GC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
