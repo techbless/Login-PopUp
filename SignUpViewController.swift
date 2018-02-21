@@ -8,7 +8,9 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet var textfieldsCollection: [UITextField]!
     
     @IBOutlet weak var realName: UITextField! // as First Field that contain name in View
     @IBOutlet weak var userName: UITextField! //as Second Field that contain username in View
@@ -20,7 +22,10 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.textfieldsCollection.forEach { (textfld) in
+            textfld.delegate = self
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +47,17 @@ class SignUpViewController: UIViewController {
         
         dismiss(animated: true)
         
+    }
+    
+    // Hide keyboard when user touches outside keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    // Hide keyboard when user touches return key on keyboard
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     

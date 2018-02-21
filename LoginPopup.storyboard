@@ -157,7 +157,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" textContentType="username"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" textContentType="username"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpa-vO-B4o">
                                                     <rect key="frame" x="55" y="77" width="176" height="21"/>
@@ -171,7 +171,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" textContentType="username"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" textContentType="username"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email-address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cet-Bl-dxm">
                                                     <rect key="frame" x="55" y="201" width="176" height="21"/>
@@ -185,14 +185,14 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" textContentType="email"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" textContentType="email"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bBH-5q-xex">
                                                     <rect key="frame" x="17" y="288" width="252" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-Pw-DBq">
                                                     <rect key="frame" x="55" y="263" width="176" height="21"/>
@@ -206,7 +206,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="confirm password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaK-QO-m3Z">
                                                     <rect key="frame" x="55" y="326" width="176" height="21"/>
@@ -252,16 +252,21 @@
                         <viewLayoutGuide key="safeArea" id="EDJ-U5-MnJ"/>
                     </view>
                     <connections>
-                        <outlet property="emailAddr" destination="ZbU-yR-J8q" id="wrR-Ql-Vkh"/>
+                        <outlet property="emailAddr" destination="ZbU-yR-J8q" id="mP2-Jz-jic"/>
                         <outlet property="password" destination="bBH-5q-xex" id="ySa-By-5B1"/>
                         <outlet property="passwordConfirmation" destination="wYG-TG-x7e" id="bWj-3A-3ns"/>
                         <outlet property="realName" destination="dBw-Nh-s0A" id="PFs-5W-ceH"/>
                         <outlet property="userName" destination="Yz5-yN-MPq" id="9gt-EN-4WV"/>
+                        <outletCollection property="textfieldsCollection" destination="dBw-Nh-s0A" collectionClass="NSMutableArray" id="bIi-TY-tdZ"/>
+                        <outletCollection property="textfieldsCollection" destination="Yz5-yN-MPq" collectionClass="NSMutableArray" id="OO6-nq-ZpV"/>
+                        <outletCollection property="textfieldsCollection" destination="ZbU-yR-J8q" collectionClass="NSMutableArray" id="lbA-Jr-3K0"/>
+                        <outletCollection property="textfieldsCollection" destination="bBH-5q-xex" collectionClass="NSMutableArray" id="WMe-KM-qyv"/>
+                        <outletCollection property="textfieldsCollection" destination="wYG-TG-x7e" collectionClass="NSMutableArray" id="Xak-ni-pao"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5o-cf-kTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324" y="475"/>
+            <point key="canvasLocation" x="1414" y="509"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="ieP-0r-8tU">
@@ -311,7 +316,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmD-1c-mWh">
                                                     <rect key="frame" x="54" y="148" width="176" height="21"/>
@@ -325,7 +330,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" textContentType="username"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" textContentType="username"/>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYR-Ml-nXG">
                                                     <rect key="frame" x="106" y="237" width="73" height="30"/>
@@ -367,11 +372,13 @@
                     <connections>
                         <outlet property="password" destination="6CE-pK-Haa" id="MhP-rM-WP4"/>
                         <outlet property="usernameOrEmail" destination="vdd-0p-KfM" id="CnA-Ka-gBI"/>
+                        <outletCollection property="textfieldsCollection" destination="vdd-0p-KfM" collectionClass="NSMutableArray" id="QY3-Fc-1zs"/>
+                        <outletCollection property="textfieldsCollection" destination="6CE-pK-Haa" collectionClass="NSMutableArray" id="jUf-eS-KOO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oE-L9-GC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324" y="-204"/>
+            <point key="canvasLocation" x="1414" y="-205"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="aWm-6R-6Ga">
@@ -379,7 +386,7 @@
                 <viewControllerPlaceholder id="cpG-oc-ogc" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFA-ra-8Ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2079" y="-85"/>
+            <point key="canvasLocation" x="2340" y="-493"/>
         </scene>
     </scenes>
 </document>
