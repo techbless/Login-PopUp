@@ -29,7 +29,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBy-aI-kqF">
                                                     <rect key="frame" x="0.0" y="0.0" width="285" height="50"/>
-                                                    <color key="backgroundColor" red="1" green="0.4171501963" blue="0.44094880660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="lYD-Gj-NF5"/>
                                                     </constraints>
@@ -53,7 +53,7 @@
                                                         <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="2hF-dU-ON9" kind="presentation" id="FrZ-bc-KkW"/>
+                                                        <segue destination="2hF-dU-ON9" kind="presentation" modalTransitionStyle="crossDissolve" id="FrZ-bc-KkW"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr1-3B-vRA">
@@ -70,7 +70,7 @@
                                                         <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="Vud-k2-Hmw" kind="presentation" id="eMN-Mr-V2u"/>
+                                                        <segue destination="Vud-k2-Hmw" kind="presentation" modalTransitionStyle="crossDissolve" id="eMN-Mr-V2u"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some words will be placed here." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NI5-7c-3mb">
@@ -114,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTZ-sM-S51" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="178"/>
+            <point key="canvasLocation" x="490" y="183"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="hnE-RX-Juf">
@@ -339,7 +339,7 @@
                                                     <state key="normal" title="SIGN IN"/>
                                                     <connections>
                                                         <action selector="SignInTapped:" destination="Vud-k2-Hmw" eventType="touchUpInside" id="NnR-vG-8HH"/>
-                                                        <segue destination="cpG-oc-ogc" kind="show" id="dDL-bk-Idq"/>
+                                                        <segue destination="cpG-oc-ogc" kind="presentation" modalTransitionStyle="crossDissolve" id="dDL-bk-Idq"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -378,15 +378,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oE-L9-GC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1414" y="-205"/>
+            <point key="canvasLocation" x="1414" y="-145"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Main-->
         <scene sceneID="aWm-6R-6Ga">
             <objects>
-                <viewControllerPlaceholder id="cpG-oc-ogc" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" id="cpG-oc-ogc" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFA-ra-8Ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2340" y="-493"/>
+            <point key="canvasLocation" x="2419" y="-408"/>
         </scene>
     </scenes>
 </document>
