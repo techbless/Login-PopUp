@@ -14,13 +14,15 @@ LOGINPOPUP-SWIFT
 
 [How to Link]  
     ![HOW TO LINK](/img/openPopUp.png)  
+        
     ![HOW TO LINK](img/goAfterSignIn.png)  
 
 [Where to Code]  
     ![SAMPLE IMAGE](/img/code.png)  
 
 [How To Change Animation]  
-    ![SAMPLE IMAGE](/img/changeSegueAnimation)  
+    ![SAMPLE IMAGE](/img/changeSegueAnimation.png) 
+       
     1. Click the segue which you want to change animation.  
     2. Choose Presentation Type.  
 
@@ -28,3 +30,5 @@ LOGINPOPUP-SWIFT
 [Sample]  
     ![SAMPLE IMAGE](/img/sample1.gif)  
 
+[How to Keep in Touch]  
+    hw@yunbin.kr
