@@ -17,7 +17,7 @@ LOGINPOPUP-SWIFT
 [How to Link]  
 	![HOW TO LINK](/img/openPopUp.png)  
 		
-	![HOW TO LINK](img/goAfterSignIn.png)  
+	![HOW TO LINK](/img/goAfterSignIn.png)  
 
 [Where to Code]  
 	![SAMPLE IMAGE](/img/code.png)  
