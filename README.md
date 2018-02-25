@@ -4,9 +4,11 @@ LOGINPOPUP-SWIFT
 
 
 [Author]  
+
 	Chris Yunbin Chang  
 
 [How to Use]  
+
 	1. Add this swift files and story board in your project.  
 	2. Link the StoryBoard Reference that refer LoginPopup storyboard.  
 	3. Link the StoryBoard Reference that refer next Storyboard that will be the view after sign in.  
@@ -31,4 +33,5 @@ LOGINPOPUP-SWIFT
 	![SAMPLE IMAGE](/img/sample1.gif)  
 
 [How to Keep in Touch]  
+
 	hw@yunbin.kr
