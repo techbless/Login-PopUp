@@ -10,6 +10,8 @@ import UIKit
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet var textfieldsCollection: [UITextField]!
     
     @IBOutlet weak var realName: UITextField! // as First Field that contain name in View
@@ -60,6 +62,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x: 0, y: 110), animated: true)
+    }
     
 
 }

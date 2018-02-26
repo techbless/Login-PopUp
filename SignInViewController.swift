@@ -11,6 +11,8 @@ import UIKit
 class SignInViewController: UIViewController, UITextFieldDelegate {
     
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet var textfieldsCollection: [UITextField]!
     
     @IBOutlet weak var usernameOrEmail: UITextField! // as First Field that contain username or email in View
@@ -52,6 +54,15 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x: 0, y: 110), animated: true)
     }
     
     
